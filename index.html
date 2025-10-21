@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gibson 1215 - Profile</title>
+
+<style>
+/* css comments - some are messy on purpose */
+/* this is for the page */
+body{
+  font-family: Arial, sans-serif;
+  background:#f3f6f8;
+  margin:0;
+  padding:20px;
+}
+
+.profile-container {
+max-width:800px;
+background: #fff;
+margin: 0 auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* header */
+.header {
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ margin-bottom: 19px;
+}
+
+.avatar{
+ width:100px;
+ height:100px;
+ border-radius:10px;
+ background: teal;
+ color: #fff;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:28px;
+ font-weight:700;
+}
+
+/* meta */
+.meta h1{ margin:0; font-size:22px; }
+.meta p{ margin:4px 0; color:gray; font-size:14px; }
+
+/* sections */
+section{ margin-bottom:20px; }
+
+h2{ color: teal; font-size:18px; margin-bottom:8px; }
+p{ color:#333; line-height:1.5; }
+
+/* skills */
+.skills{ display:flex; flex-wrap:wrap; gap:8px; }
+.skill{ background:#e0f2f1; color:teal; padding:6px 12px; border-radius:20px; font-size:13px; font-weight:700; }
+
+/* contact links */
+.contact a{ display:inline-block; background:#f0f7f6; padding:8px 12px; margin:5px; border-radius:6px; text-decoration:none; color:black; font-size:14px; }
+.contact a:hover{ background:#d6f0ef; }
+
+/* tiny phone responsive */
+@media (max-width:600px){
+  .header{ flex-direction:column; align-items:flex-start; }
+  .avatar{ margin-bottom:10px; }
+}
+</style>
+</head>
+<body>
+
+<div class="profile-container">
+
+  <!-- header -->
+  <div class="header">
+    <div class="avatar">
+      <!-- real pic would go here -->
+      <img src="gibon.jpg" alt="Gibson Pal Singh" style="width:100%; height:100%; object-fit:cover; border-radius:inherit; display:block;">
+    </div>
+
+    <div class="meta">
+      <h1><i>Gibson Pal Singh</i></h1>
+      <p>Branch: Computer Science & Engineering</p>
+      <p>Roll No: <i>1215</i></p>
+    </div>
+  </div>
+
+  <!-- about -->
+  <section>
+    <h2>About</h2>
+    <p>I am a Computer Science student who enjoys web development and solving problems. I like creating clean, simple websites and learning new technologies and cracking the secured ones...</p>
+  </section>
+
+  <!-- skills -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">learning security (ethical)</span>
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section>
+    <h2>Projects & Interests</h2>
+    <ul>
+      <li>HTML/CSS/JAVA</li>
+     <li>Creating Websites and Cyber World</li> 
+     <li>Cracking secured networks and security software and making thingsS</li>
+    </ul>
+  </section>
+
+  <!-- contant () -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <!-- the phone is mine :) -->
+    <a href="tel:+917529051517">📞 +91 7529051517</a>
+    <a href="mailto:Kaurjagdee4@gmail.com">✉️ Kaurjagdee4@gmail.com</a>
+    <a href="https://www.instagram.com/gibson_ramgarhia" target="_blank">📸 Instagram</a>
+    <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+    <a href="https://snapchat.com" target="_blank">👻 Snapchat</a>
+  </section>
+
+</div>
+<!-- random little comment: i might add more here later -->
+</body>
+</html>
